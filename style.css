@@ -1,0 +1,57 @@
+article {
+  display: flex;
+  flex-direction: column;
+}
+
+code {
+  color: gray;
+  font-size: 18px;
+}
+
+.question,
+.result {
+  display: none;
+}
+/* .start,
+.question {
+  display: none;
+} */
+
+.score {
+  letter-spacing: 20px;
+}
+.reStudy {
+  position: relative;
+}
+.reStudy::before {
+  content: "다시 공부하자";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background: #fff;
+  color: #dc3545;
+  font-size: 28px;
+  font-weight: 700;
+  padding: 0 10px;
+}
+
+.table-caption {
+  caption-side: top;
+  text-align: center;
+}
+
+table {
+  table-layout: fixed;
+}
+th,
+td {
+  word-break: break-all;
+  vertical-align: middle;
+}
+
+tr > th:first-child {
+  width: 100px;
+  box-sizing: border-box;
+}
